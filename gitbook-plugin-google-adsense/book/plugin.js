@@ -28,8 +28,9 @@ require(["gitbook"], function(gitbook) {
 
         // init script
         var adScript = document.createElement('script');
-        adScript.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+        adScript.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + config.client;
         adScript.setAttribute('async', true);
+        adScript.setAttribute('crossorigin', "anonymous");
         document.body.appendChild(adScript);
     });
 
