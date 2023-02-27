@@ -1,6 +1,6 @@
 require(["gitbook"], function(gitbook) {
     // plugin config
-    var config;
+    var ads;
 
     function createAdElement(adConfig) {
         adElement = document.createElement('ins');
@@ -24,19 +24,20 @@ require(["gitbook"], function(gitbook) {
     }
 
     gitbook.events.bind("start", function(e, pluginConfig) {
-        config = pluginConfig['google-adsense'].ads;
+        client = pluginConfig['google-adsense'].client;
+        ads = pluginConfig['google-adsense'].ads;
 
         // init script
         var adScript = document.createElement('script');
-        adScript.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + config.client;
+        adScript.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + client;
         adScript.setAttribute('async', true);
         adScript.setAttribute('crossorigin', "anonymous");
         document.body.appendChild(adScript);
     });
 
     gitbook.events.bind("page.change", function() {
-        if (config) {
-            injectAds(config);
+        if (ads) {
+            injectAds(ads);
         }
     });
 });
