@@ -58,6 +58,11 @@
         "title": "Alipay QR URL",
         "default": ""
       },
+      "kofi": {
+        "type": "string",
+        "title": "KOFI QR URL",
+        "default": ""
+      },
       "wechatText": {
         "type": "string",
         "title": "Wechat QR text",
@@ -67,6 +72,11 @@
         "type": "string",
         "title": "Alipay QR Text",
         "default": "支付宝打赏"
+      },
+      "kofiText": {
+        "type": "string",
+        "title": "KOFI QR Text",
+        "default": "KO-FI 打赏"
       }
     }
   },
@@ -76,7 +86,8 @@
     "plugin",
     "donate",
     "alipay",
-    "wechat"
+    "wechat",
+    "kofi"
   ],
   "license": "MIT",
   "main": "index.js",

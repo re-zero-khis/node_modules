@@ -11,6 +11,7 @@ Config:
         "donate": {
           "wechat": "例：/images/qr.png",
           "alipay": "http://blog.willin.wang/static/images/qr.png",
+          "kofi": "/images/qr.png",
           "title": "默认空",
           "button": "默认值：Donate",
           "alipayText": "默认值：支付宝捐赠",
