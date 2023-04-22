@@ -9,13 +9,16 @@ Config:
     "plugins": ["donate"],
     "pluginsConfig": {
         "donate": {
-          "wechat": "例：/images/qr.png",
-          "alipay": "http://blog.willin.wang/static/images/qr.png",
-          "kofi": "/images/qr.png",
           "title": "默认空",
           "button": "默认值：Donate",
+          "wechat": "例：/images/qr.png",
+          "wechatText": "默认值：微信捐赠",
+          "alipay": "http://blog.willin.wang/static/images/qr.png",
           "alipayText": "默认值：支付宝捐赠",
-          "wechatText": "默认值：微信捐赠"
+          "kofi": "/images/qr.png",
+          "kofiText": "默认值：KO-FI 捐赠",
+          "openCollective": "/images/qr.png",
+          "openCollectiveText": "默认值：OpenCollective 捐赠"
         }
     }
 }

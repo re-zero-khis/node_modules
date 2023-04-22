@@ -77,6 +77,11 @@
         "type": "string",
         "title": "KOFI QR Text",
         "default": "KO-FI 打赏"
+      },
+      "openCollectiveText": {
+        "type": "string",
+        "title": "OpenCollective Text",
+        "default": "OpenCollective 打赏"
       }
     }
   },
@@ -87,7 +92,8 @@
     "donate",
     "alipay",
     "wechat",
-    "kofi"
+    "kofi",
+    "openCollective"
   ],
   "license": "MIT",
   "main": "index.js",
