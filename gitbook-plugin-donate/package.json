@@ -63,6 +63,11 @@
         "title": "KOFI QR URL",
         "default": ""
       },
+      "openCollective": {
+        "type": "string",
+        "title": "OpenCollective QR URL",
+        "default": ""
+      },
       "wechatText": {
         "type": "string",
         "title": "Wechat QR text",
